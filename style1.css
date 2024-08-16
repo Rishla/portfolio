@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto Condensed", sans-serif;
+}
+
+#container{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+nav{
+    display: flex;
+    /* here img and ul will in one line */
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 80px;
+}
+.logo{
+    width: 150px;
+}
+
+.listitems{
+    display: inline;
+    margin:0px 20px ;
+}
+.links{
+    text-decoration: none;
+    color: black;
+    font-size:20px ;
+    font-weight: bold;
+
+}
+#homecontent{
+    margin: 13% 0% 0% 8%;
+}
+#uname{
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-family: "Playwrite AT", cursive;
+}
+#lname{
+    font-family: "Playwrite AT", cursive;
+    color: rgb(226, 41, 41);
+}
+#userdetails{
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.download{
+    text-decoration: none;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+/* pseudo class */
+.links:hover{
+color: orangered;
+text-decoration: underline;
+}
+
+.homeimages{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0px;
+    right: 30px;
+}
+    
+.group1{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: bottom 2s, left 1s;
+    
+}
+.homeimages:hover #shape{
+    bottom: 30px;
+
+}
+
+.homeimages:hover #girl{
+    left: 45%;
+}
+
+
+#about{
+    margin: 13% 8% 0% 8%;
+}
+
+.sectionhead{
+    text-align: center;
+}
+
+.mainhead{
+    font-size: 30px;
+    font-family: "Playwrite AT", cursive;
+
+}
+.subhead{
+    font-size: 20px;
+    color: rgb(131, 92, 8);
+    font-family: "Playwrite AT", cursive;
+
+}
+.sectionbody{
+    display: flex;
+    align-items: center;
+}
+
+#aboutimage>img{
+    width: 400px;
+}
+
+.aboutcontent{
+    font-size: 18px;
+    text-align: justify;
+    line-height: 1.5;
+    padding: 20px;
+}
+.info{
+    margin-top: 20px;
+}
+.infobox{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.infobox>span{
+    margin-left: 20px;
+}
+
+#skills{
+    margin: 8% 8% 0% 8%;
+}
+
+.skillcontent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    margin-top: 20px;
+    gap: 2rem;
+}
+.skillimage{
+    width: 100%;
+
+}
+.bar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+    position: relative;
+}
+.basebar{
+    width: 100%;
+    height: 0.5rem;
+    background-color: black;
+    border-radius: 0.5rem;
+    position: absolute;
+    bottom: 0px;
+}
+.htmlbar{
+    width: 75%;
+    background-color:rgb(192, 8, 8) ;
+}
+.sqlbar{
+    width: 90%;
+    background-color:rgb(192, 8, 8) ;
+}
+.cssbar{
+    width: 55%;
+    background-color:rgb(192, 8, 8) ;
+}
+.pythonbar{
+    width: 67%;
+    background-color:rgb(192, 8, 8) ;
+}
